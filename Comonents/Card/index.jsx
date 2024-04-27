@@ -7,9 +7,9 @@ const Card = ({ item, onToggle }) => {
   const [toggled, setToggled] = useState(item.toggled);
 
   const handleToggle = () => {
-    const newToggled = !toggled; // Calculate the new toggled state
-    setToggled(newToggled); // Update the local state
-    onToggle(id, newToggled); // Call the onToggle function with the new toggled state
+    const newToggled = !toggled; 
+    setToggled(newToggled); 
+    onToggle(id, newToggled);
   };
 
 

@@ -13,7 +13,6 @@ export default function Main() {
   const [data,setData]=useState([])
   const [filteredData, setFilteredData] = useState([]);
   const [refreshing, setRefreshing] = useState(false);
-
   const fetchData = () => {
     fetch('https://jsonplaceholder.typicode.com/photos')
       .then((res) => res.json())
